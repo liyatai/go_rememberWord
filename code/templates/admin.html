@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/css/button.css" rel="stylesheet" type="text/css">
+    <link href="/static/css/select.css" rel="stylesheet" type="text/css">
+    <link href="/static/css/table.css" rel="stylesheet" type="text/css">
+    <script src="/static/js/button.js"></script>
+    <title>Document</title>
+</head>
+<body background="/static/img/im.png">
+    <div id="select">
+        <button id="b1" onclick="exit()">返回</button>
+        name
+        <!-- 下拉列表 -->
+        <select id="so" >
+            {{range $key,$vaule:=.option}}
+            <option>{{$vaule}}</option>
+            {{end}}
+        </select>
+        level 
+        <select id="level">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <!-- 按钮 -->
+        <button id="b3" onclick="add()">添加</button>
+        <button id="b2"onclick="order()">排序</button>
+    </div>
+    <!-- 表格设置 -->
+    <div id="table">
+         <table  align="center" border="1" style="width: 88%;">
+             <tr id="b5">
+                 <th style="width: 10%;">编号</th>
+                 <th style="width: 20%;">name</th>
+                 <th style="width: 10%;">level</th>
+                 <th style="width: 20%;">time</th>
+             </tr>
+             {{range $key,$vaule:=.list}}
+            <tr >
+                <td>{{$key}}</td>
+                <td>{{$vaule.Name}}</td>
+                <td>{{$vaule.Level}}</td>
+                <td>{{$vaule.Time}}</td>
+            </tr>
+            
+            {{end}}
+         </table>
+    </div>
+   
+</body>
+</html>

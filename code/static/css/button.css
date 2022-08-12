@@ -1,0 +1,32 @@
+#b1{
+    background: #4481e2;
+    color: white;
+}
+#b2{
+    background: #17f117;
+    color: white;
+}
+#b3{
+    background: #e85f5f;
+    color: white;
+}
+#b4{
+    background: #f7ab3a;
+    color: white;
+}
+button{
+    width: 12%;
+    font-size:x-large ;
+}
+#bg{
+    text-align  : center;
+    
+}
+#b5{
+    background: #f7ab3a;
+    color: white;
+}
+#start{
+    background: rgb(8, 208, 135);
+    color: white;
+}

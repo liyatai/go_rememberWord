@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/static/css/button.css" rel="stylesheet" type="text/css">
+    <link href="/static/css/word.css" rel="stylesheet" type="text/css">
+    <link href="/static/css/select.css" rel="stylesheet" type="text/css">
+    <script src="/static/js/button.js"></script>
+  
+</head>
+<body background="/static/img/im.png">
+    <div id="select">
+        <button id="start" onclick="select()">开始</button>
+       <select id="so" >
+           {{range $key,$vaule:=.option}}
+           <option>{{$vaule}}</option>
+           
+           {{end}}
+       </select>
+       <button id="b5" onclick="jumpAdmin()">后台</button>
+    </div>
+    <br>
+    
+    <br>
+    
+    <br>
+    <div id="word">
+        <p1>英文</p1>
+        <br>
+        <br>
+    <br>
+    <br>
+    
+    <br>
+    <br>
+        <p2>中文</p2>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+   
+    <br>
+    <br>
+    <!-- 按钮组 -->
+   <div id="bg">
+    <button id="b1">切换</button>
+    <button id="b2">中文</button>
+    <button id="b3">移除</button>
+    <button id="b4">发音</button>
+   </div> 
+    
+</body>
+</html>
