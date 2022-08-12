@@ -58,5 +58,19 @@ func init() {
 ![image](https://user-images.githubusercontent.com/102398022/184393820-1132dc17-7a04-48d2-b953-aa2f2dfd09e5.png)
 ## 记录表
 记录表只能建立一个record名字命名的表
-
-
+![image](https://user-images.githubusercontent.com/102398022/184395038-c8ed651f-3adb-4853-a79c-7e946f9d6e8a.png)
+# 使用方法
+使用方法我会放在bilibili
+# 常见问题
+如果遇到报错，那么可能是没有导包，这个程序需要导入的包如下所示
+```go
+        "github.com/gin-contrib/sessions"
+	"github.com/gin-contrib/sessions/cookie"
+	"github.com/gin-gonic/gin"
+	"gorm.io/driver/mysql"
+	"gorm.io/gorm"
+```
+如果哪个包报错了直接
+```shell
+go get +包名别带引号
+```
